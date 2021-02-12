@@ -14,15 +14,17 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-size: 20px;
+  font-size: 12px;
 }
 
 body {
   min-height: 100vh;
   background: var(--bg);
   color: var(--fg);
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: Poppins, YuGothic, 'Yu Gothic', 游ゴシック体, 游ゴシック,
+    'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', Roboto, メイリオ, Meiryo,
+    'ＭＳ Ｐゴシック', Osaka, 'MS PGothic', Arial, Helvetica, Verdana,
+    sans-serif;
 
   /* Hack */
   overflow-x: hidden;
