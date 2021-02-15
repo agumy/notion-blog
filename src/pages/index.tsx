@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <div className={homeStyles.home}>
       {[...Array(10).keys()].map(n => (
-        <Post />
+        <Post key={n} />
       ))}
     </div>
   )
