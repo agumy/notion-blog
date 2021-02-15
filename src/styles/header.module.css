@@ -1,0 +1,18 @@
+.header {
+  min-height: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.spacer {
+  width: 60px;
+}
+
+.title {
+  color: #e5faff;
+}
+
+.info {
+  width: 60px;
+}

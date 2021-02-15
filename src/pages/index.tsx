@@ -4,7 +4,7 @@ import Post from '../components/post'
 export default function Home() {
   return (
     <div className={homeStyles.home}>
-      {[...Array(10).keys()].map(n => (
+      {[...Array(5).keys()].map(n => (
         <Post key={n} />
       ))}
     </div>
