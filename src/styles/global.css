@@ -19,8 +19,8 @@ body {
 
 body {
   min-height: 100vh;
-  background: var(--bg);
-  color: var(--fg);
+  background: #24584b;
+  color: #333;
   font-family: Poppins, YuGothic, 'Yu Gothic', 游ゴシック体, 游ゴシック,
     'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', Roboto, メイリオ, Meiryo,
     'ＭＳ Ｐゴシック', Osaka, 'MS PGothic', Arial, Helvetica, Verdana,
