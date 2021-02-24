@@ -8,16 +8,17 @@
 .header {
   min-height: 80px;
   width: 100%;
-  background-color: #24584b;
+  background-color: #85c1bd;
 }
 
 .main {
   flex: 1 0 auto;
   width: 100%;
+  background-color: #dcf5f7;
 }
 
 .footer {
   min-height: 160px;
   width: 100%;
-  background-color: #24584b;
+  background-color: #85c1bd;
 }
