@@ -12,8 +12,8 @@ export default ({ Component, pageProps }) => (
     <main className={appStyle.main}>
       <Component {...pageProps} />
     </main>
-    <div className={appStyle.footer}>
+    {/* <div className={appStyle.footer}>
       <Footer />
-    </div>
+    </div> */}
   </div>
 )
