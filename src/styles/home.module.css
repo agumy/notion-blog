@@ -13,6 +13,11 @@
   background-color: #dcf5f7;
 }
 
+.post:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
 .title {
   width: 100%;
   font-size: 14px;
