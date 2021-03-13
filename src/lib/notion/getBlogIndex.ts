@@ -23,8 +23,18 @@ export default async function getBlogIndex(previews = true) {
     try {
       const data = await rpc('loadPageChunk', {
         pageId: BLOG_INDEX_ID,
-        limit: 999, // TODO: figure out Notion's way of handling pagination
-        cursor: { stack: [] },
+        limit: 30,
+        cursor: {
+          stack: [
+            [
+              {
+                table: 'block',
+                id: BLOG_INDEX_ID,
+                index: 0,
+              },
+            ],
+          ],
+        },
         chunkNumber: 0,
         verticalColumns: false,
       })
@@ -36,19 +46,7 @@ export default async function getBlogIndex(previews = true) {
 
       postsTable = await getTableData(tableBlock, true)
     } catch (err) {
-      console.warn(
-        `Failed to load Notion posts, attempting to auto create table`
-      )
-      try {
-        await createTable()
-        console.log(`Successfully created table in Notion`)
-      } catch (err) {
-        console.error(
-          `Auto creating table failed, make sure you created a blank page and site the id with BLOG_INDEX_ID in your environment`,
-          err
-        )
-      }
-      return {}
+      console.error(err)
     }
 
     // only get 10 most recent post's previews
